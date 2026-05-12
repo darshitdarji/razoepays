@@ -19,7 +19,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
     super.initState();
     _razorpay = Razorpay();
     _razorpay.on(Razorpay.EVENT_PAYMENT_SUCCESS, _handleSuccess);
-    _razorpay.on(Razorpay.EVENT_PAYMENT_ERROR, _handleError);
+    // _razorpay.on(Razorpay.EVENT_PAYMENT_ERROR, _handleError);
     _razorpay.on(Razorpay.EVENT_EXTERNAL_WALLET, _handleExternalWallet);
   }
 
