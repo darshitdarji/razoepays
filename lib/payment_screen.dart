@@ -30,9 +30,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
     super.dispose();
   }
 
-  void _log(String msg) {
-    setState(() => _logs.insert(0, '[${DateTime.now().toIso8601String().substring(11, 19)}] $msg'));
-  }
+  // void _log(String msg) {
+  //   setState(() => _logs.insert(0, '[${DateTime.now().toIso8601String().substring(11, 19)}] $msg'));
+  // }
 
   void _handleSuccess(PaymentSuccessResponse response) {
     _log('SUCCESS — payment_id: ${response.paymentId}');
